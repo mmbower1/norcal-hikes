@@ -2,7 +2,7 @@ import React from 'react';
 // containers
 import Landing from './containers/landing/Landing'; 
 // scss
-import './App.css';
+import './scss/App.scss';
 
 function App() {
   return (
