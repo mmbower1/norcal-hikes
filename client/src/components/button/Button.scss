@@ -1,0 +1,64 @@
+.btn-animated {
+  animation-fill-mode: backwards;
+  animation: moveInBottom ease-out .75s;
+}
+
+.btn::after {
+  border-radius: 100px;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all .4s;
+  z-index: -1;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.btn:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+.btn:hover::after {
+  opacity: 0;
+  transform: scale(2);
+  height: 100%;
+  width: 100%;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.btn-white {
+  background-color: #fff;
+  border-radius: 100px;
+  color: #777;
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px 40px;
+  transition: all .1s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

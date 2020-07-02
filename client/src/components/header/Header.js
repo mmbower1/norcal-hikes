@@ -1,0 +1,25 @@
+import React from 'react';
+// components
+import Button from '../button/Button';
+// scss
+import './Header.scss';
+import logoWhite from '../../img/logo-white.png';
+
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-box">
+        <img src={logoWhite} alt="logo" className="logo" />
+      </div>
+      <div className="text-box">
+        <h1 className="heading-primary">
+          <span className="heading-primary-main">Northern California</span>
+          <span className="heading-primary-sub">is where life happens</span>
+        </h1>
+        <Button />
+      </div>
+    </div>
+  )
+}
+
+export default Header;
