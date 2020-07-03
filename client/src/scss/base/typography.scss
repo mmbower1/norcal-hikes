@@ -1,0 +1,30 @@
+.heading-secondary {
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  color: transparent;
+  display: inline-block;
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all .2s;
+  -webkit-background-clip: text;
+
+  &:hover {
+    transform: skewY(2deg) skewX(4deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: .9rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
