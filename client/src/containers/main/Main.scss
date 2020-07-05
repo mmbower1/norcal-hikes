@@ -1,5 +1,42 @@
 @import "../../scss/App.scss";
 
+.composition {
+  position: relative;
+
+  &__photo {
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    border-radius: 2px;
+    outline-offset: 2rem;
+    position: absolute;
+    transition: all .2s;
+    width: 55%;
+    z-index: 10;
+
+    &--p1 {
+      left: -2rem;
+    }
+    &--p2 {
+      right: 0;
+      top: 2rem;
+    }
+    &--p3 {
+      left: 20%;
+      top: 10rem;
+    }
+
+    &:hover {
+      box-shadow: 0 2.5rem 4rem rbga($color-black, .5);
+      outline: 1.4rem solid $color-primary;
+      transform: scale(1.05) translateY(-.5rem);
+      z-index: 20;
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(.95);
+  }
+}
+
 .section-about {
   background-color: $color-grey-light-1;
   margin-top: 25rem 0;

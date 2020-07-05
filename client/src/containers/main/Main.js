@@ -1,6 +1,10 @@
 import React from 'react';
 // components
 import SmallButton from '../../components/small-button/SmallButton';
+// img
+import pic1 from '../../img/nat-1-large.jpg'
+import pic2 from '../../img/nat-2-large.jpg'
+import pic3 from '../../img/nat-3-large.jpg'
 // styles
 import './Main.scss';
 
@@ -19,7 +23,11 @@ const Main = () => {
           <SmallButton />
         </div>
         <div className="col-1-of-2">
-          Image Composition
+          <div className="composition">
+            <img src={pic1} alt="Pic1" className="composition__photo composition__photo--p1"/>
+            <img src={pic2} alt="Pic2" className="composition__photo composition__photo--p2"/>
+            <img src={pic3} alt="Pic3" className="composition__photo composition__photo--p3"/>
+          </div>
         </div>
       </div>
     </section>

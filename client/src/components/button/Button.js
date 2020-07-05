@@ -3,9 +3,10 @@ import React from 'react';
 import './Button.scss';
 
 const Button = () => {
+
   return (
     <div className="btn btn-white btn-animated">
-      Discover Outdoors
+      
     </div>
   )
 }
