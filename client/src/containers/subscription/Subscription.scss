@@ -10,12 +10,37 @@
   box-shadow: 0 1.5rem 4rem rbga($color-black, .2);
   border-radius: 3px;
   margin: 0 7rem;
-  height: 43rem;
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(105deg, 
+      rgba($color-white, .9) 0%, 
+      rgba($color-white, .9) 65%, 
+      transparent 65%), 
+    url('../../img/nat-10.jpg');
+    background-size: cover;
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(to right, 
+      rgba($color-white, .9) 0%, 
+      rgba($color-white, .9) 100%, 
+      transparent 65%), 
+    url('../../img/nat-10.jpg');
+    background-size: cover;
+  }
 
   &__form {
     padding: 6rem;
     position: relative;
     width: 50%;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
 
     h4 {
       cursor: pointer;
@@ -43,6 +68,10 @@
       padding: 1.5rem 2rem;
       transition: all .3s;
       width: 90%;
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
 
       &:focus {
         box-shadow: 0 1rem 2rem rbga($color-black, .1);
@@ -77,4 +106,8 @@
 .section-book {
   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
   padding: 5rem 0;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
