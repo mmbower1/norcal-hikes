@@ -31,6 +31,7 @@
     padding-top: 2rem;
 
     @include respond(tab-port) {
+      margin-left: 0;
       width: 100%;
       text-align: center;
     }
@@ -75,8 +76,9 @@
     width: 80%;
 
     @include respond(tab-port) {
+      float: left;
+      padding-left: 4rem;
       width: 100%;
-      float: none;
     }
   }
 }
