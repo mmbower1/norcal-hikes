@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 // components
 import Button from '../button/Button';
 // scss
@@ -18,7 +18,9 @@ const Header = () => {
           <span className="heading-primary-main">Northern California</span>
           <span className="heading-primary-sub">is where life happens</span>
         </h1>
-        <Button></Button>
+        <a href='#modal'>
+          <Button></Button>
+        </a>
         {/* <Button />Discover Outdoors */}
         {/* <h4>{discover}</h4> */}
       </div>

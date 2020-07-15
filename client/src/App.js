@@ -3,6 +3,7 @@ import React, { lazy, Suspense } from 'react';
 // components
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
+import Modal from './components/modal/Modal';
 import Navigation from './components/navigation/Navigation';
 import Spinner from './components/spinner/Spinner';
 // containers
@@ -30,12 +31,12 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <Suspense fallback={<Spinner />}>
+          <Modal />
           <Navigation />
           <Header />
           <Main />
           <Features />
           <Hikes />
-          <Subscription />
           <Footer />
         </Suspense>
       </div>

@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         <div className="col-1-of-2">
           <p className="footer__copyright">
-            Copyright &copy; 2020 https://norcal-hikes.com/
+            Copyright &copy; 2020 https://norcal-outdoors.com/
           </p>
         </div>
       </div>

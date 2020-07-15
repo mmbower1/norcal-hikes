@@ -7,7 +7,7 @@ const Hikes = () => {
   return (
     <div className="section-tours">
       <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">Most popular hikes.</h2>
+        <h2 className="heading-secondary">Most popular places.</h2>
       </div>
       <div className="row">
         <div className="col-1-of-3">

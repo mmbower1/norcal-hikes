@@ -29,14 +29,14 @@ const Subscription = ({ subscribe }) => {
 	};
 
   return (
-    <div className="section-book">
+    <div id="section-book" className="section-book">
       <div className="row">
         <div className="book">
           <div className="book__form">
             <form action="#" className="form" onSubmit={(e) => onSubmit(e)}>
               <div className="u-margin-bottom-medium">
                 <h2 className="heading-secondary">
-                  Subscribe now
+                  Subscribe now!
                 </h2>
               </div>
               <div className="form__group">
