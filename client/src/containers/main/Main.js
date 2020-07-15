@@ -17,9 +17,9 @@ const Main = () => {
       <div className="row">
         <div className="col-1-of-2">
           <h3 className="heading-tertiary u-margin-bottom-small">You're going to fall in love with this state.</h3>
-          <p className="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere rerum sapiente, hic quisquam quae aliquid eaque, obcaecati ris voluptate us quia nam.</p>
+          <p className="paragraph">Northern CA has to offer what most other places don't - beaches, mountains, forests, and valleys all in one!</p>
           <h3 className="heading-tertiary u-margin-bottom-small">Live like you never have before.</h3>
-          <p className="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere rerum sapiente, hic quisquam quae aliquid eaque, hello watermelon town place .</p>
+          <p className="paragraph">Please leave a review and let us know how your experience was for a potential discount on your next visit!</p>
           <SmallButton />
         </div>
         <div className="col-1-of-2">

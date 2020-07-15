@@ -17,15 +17,14 @@ const Hikes = () => {
                 &nbsp;
               </div>
               <h4 className="card__heading">
-                <span className="card__heading-span card__heading-span-1">Beach Explorer</span>
+                <span className="card__heading-span card__heading-span-1">Pacific Beaches</span>
               </h4>
               <div className="card__details">
                 <ul>
                   <li>Up to 30 people</li>
-                  <li>Camping</li>
-                  <li>Tour Guides</li>
+                  <li>Fishing</li>
+                  <li>Boating</li>
                   <li>Lodging/Hotel</li>
-                  <li>Difficulty: easy</li>
                 </ul>
               </div>
             </div>
@@ -47,15 +46,14 @@ const Hikes = () => {
                 &nbsp;
               </div>
               <h4 className="card__heading">
-                <span className="card__heading-span card__heading-span-2">Forest Hiker</span>
+                <span className="card__heading-span card__heading-span-2">Mendocino & Yosemite</span>
               </h4>
               <div className="card__details">
                 <ul>
                   <li>Up to 30 people</li>
                   <li>Camping</li>
+                  <li>Hike Equipment</li>
                   <li>Tour Guides</li>
-                  <li>Lodging/Hotel</li>
-                  <li>Difficulty: medium</li>
                 </ul>
               </div>
             </div>
@@ -77,15 +75,14 @@ const Hikes = () => {
                 &nbsp;
               </div>
                 <h4 className="card__heading">
-                  <span className="card__heading-span card__heading-span-3">Snow Adventurer</span>
+                  <span className="card__heading-span card__heading-span-3">The Sierras & Tahoe</span>
                 </h4>
                 <div className="card__details">
                   <ul>
                     <li>Up to 30 people</li>
-                    <li>Camping</li>
+                    <li>Ski Resorts</li>
+                    <li>Lodging/Hotels</li>
                     <li>Tour Guides</li>
-                    <li>Lodging/Hotel</li>
-                    <li>Difficulty: medium</li>
                   </ul>
                 </div>
               </div>
