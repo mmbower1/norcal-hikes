@@ -1,205 +1,204 @@
 @import '../../scss/App.scss';
 
 .section-tours {
-  background-color: $color-grey-light-1;
-  margin-top: -10rem;
-  padding: 10rem 0 50rem 0;
+	background-color: $color-grey-light-1;
+	margin-top: -10rem;
+	padding: 10rem 0 15rem 0;
 
-  @include respond(tab-port) {
-    padding: 20rem 0 10rem 0;
-  }
+	@include respond(tab-port) {
+		padding: 20rem 0 10rem 0;
+	}
 
-  .card {
-    height: 50rem;
-    -moz-perspective: 150rem; // for all browsers
-    perspective: 150rem;
-    position: relative;
+	.card {
+		height: 50rem;
+		-moz-perspective: 150rem; // for all browsers
+		perspective: 150rem;
+		position: relative;
 
-    &__side {
-      backface-visibility: hidden;
-      border-radius: 3px;
-      box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-      font-size: 2rem;
-      height: 40.5rem;
-      overflow: hidden;
-      transition: all .8s ease;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
+		&__side {
+			backface-visibility: hidden;
+			border-radius: 3px;
+			box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+			font-size: 2rem;
+			height: 40.5rem;
+			overflow: hidden;
+			transition: all .8s ease;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
 
-      &-front {
-        // background-color: $color-white;
-        &:hover {
-          transform: rotateY(-180deg);
-        }
-      }
+			&-front {
+				// background-color: $color-white;
+				&:hover {
+					transform: rotateY(-180deg);
+				}
+			}
 
-      &-back {
-        background-color: green;
-        transform: rotateY(-180deg);
+			&-back {
+				background-color: green;
+				transform: rotateY(-180deg);
 
-        &:hover {
-          transform: rotateY(0);
-        }
+				&:hover {
+					transform: rotateY(0);
+				}
 
-        &-1 {
-          background-image: linear-gradient(to right bottom, $color-secondary-yellow, $color-secondary-orange);
-        }
-        &-2 {
-          background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-        }
-        &-3 {
-          background-image: linear-gradient(to right bottom, $color-secondary-blue, $color-secondary-purple);
-        }
-      }
-    }
+				&-1 {
+					background-image: linear-gradient(
+						to right bottom,
+						$color-secondary-yellow,
+						$color-secondary-orange
+					);
+				}
+				&-2 {
+					background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+				}
+				&-3 {
+					background-image: linear-gradient(to right bottom, $color-secondary-blue, $color-secondary-purple);
+				}
+			}
+		}
 
-    &__picture {
-      background-size: cover;
-      background-blend-mode: screen;
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      height: 23rem;
+		&__picture {
+			background-size: cover;
+			background-blend-mode: screen;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+			-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+			clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+			height: 23rem;
 
-      &-1 {
-        background-image: linear-gradient(
-          to right bottom, $color-secondary-orange, $color-secondary-yellow), 
-        url('../../img/nat-5.jpg');
-      }
-      &-2 {
-        background-image: linear-gradient(
-          to right bottom, $color-primary-light, $color-primary-dark), 
-        url('../../img/nat-6.jpg');
-      }
-      &-3 {
-        background-image: linear-gradient(
-          to right bottom, $color-secondary-blue, $color-secondary-purple), 
-        url('../../img/nat-7.jpg');
-      }
-    }
+			&-1 {
+				background-image: linear-gradient(to right bottom, $color-secondary-orange, $color-secondary-yellow),
+					url('../../img/nat-5.jpg');
+			}
+			&-2 {
+				background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+					url('../../img/nat-6.jpg');
+			}
+			&-3 {
+				background-image: linear-gradient(to right bottom, $color-secondary-blue, $color-secondary-purple),
+					url('../../img/nat-7.jpg');
+			}
+		}
 
-    &__heading {
-      color: $color-white;
-      font-size: 2.5rem;
-      font-weight: 300;
-      position: absolute;
-      text-transform: uppercase;
-      text-align: right;
-      right: 2rem;
-      top: 12rem;
-      width: 75%;
-    }
+		&__heading {
+			color: $color-white;
+			font-size: 2.5rem;
+			font-weight: 300;
+			position: absolute;
+			text-transform: uppercase;
+			text-align: right;
+			right: 2rem;
+			top: 12rem;
+			width: 75%;
+		}
 
-    &__heading-span {
-      padding: 1rem 1.5rem;
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
+		&__heading-span {
+			padding: 1rem 1.5rem;
+			-webkit-box-decoration-break: clone;
+			box-decoration-break: clone;
 
-      &-1 {
-        background-image: linear-gradient(to right bottom, 
-        rgba($color-secondary-yellow, .85)), 
-        rbga($color-secondary-orange);
-      }
-    }
+			&-1 {
+				background-image: linear-gradient(to right bottom, rgba($color-secondary-yellow, .85)),
+					rbga($color-secondary-orange);
+			}
+		}
 
-    &__details {
+		&__details {
+			ul {
+				list-style: none;
+				margin: 0 auto;
+				width: 80%;
 
-      ul {
-        list-style: none;
-        margin: 0 auto;
-        width: 80%;
+				li {
+					font-size: .8rem;
+					padding: 1rem;
+					text-align: center;
 
-        li {
-          font-size: .8rem;
-          padding: 1rem;
-          text-align: center;
+					&:not(:last-child) {
+						border-bottom: 1px solid $color-grey-light-2;
+					}
+				}
+			}
+		}
 
-          &:not(:last-child) {
-            border-bottom: 1px solid $color-grey-light-2;
-          }
-        }
-      }
-    }
+		&__cta {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			text-align: center;
+			transform: translate(-50%, -50%);
+			width: 90%;
+		}
 
-    &__cta {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      text-align: center;
-      transform: translate(-50%, -50%);
-      width: 90%;
-    }
+		&__price-box {
+			color: $color-white;
+			margin-bottom: 8rem;
+			text-align: center;
+		}
 
-    &__price-box {
-      color: $color-white;
-      margin-bottom: 8rem;
-      text-align: center;
-    }
+		&__price-only {
+			font-size: 1.4rem;
+			text-transform: uppercase;
+		}
 
-    &__price-only {
-      font-size: 1.4rem;
-      text-transform: uppercase;
-    }
+		&__price-value {
+			font-size: 6rem;
+			font-weight: 100;
+		}
 
-    &__price-value {
-      font-size: 6rem;
-      font-weight: 100;
-    }
+		@include respond(tab-port) {
+			background-color: $color-white;
+			border-radius: 3px;
+			box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+			height: auto;
 
-    @include respond(tab-port) {
-      background-color: $color-white;
-      border-radius: 3px;
-      box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-      height: auto;
+			&__side {
+				height: auto;
+				position: relative;
 
-      &__side {
-        height: auto;
-        position: relative;
+				&-back {
+					clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+					transform: rotateY(0);
+				}
+			}
 
-        &-back {
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-          transform: rotateY(0);
-        }
-      }
+			&:hover &__side-front {
+				transform: rotateY(0);
+			}
 
-      &:hover &__side-front {
-        transform: rotateY(0);
-      }
+			&__details {
+				padding: 1rem 3rem;
+			}
 
-      &__details {
-        padding: 1rem 3rem
-      }
+			&__cta {
+				padding: 7rem 4rem 4rem 4rem;
+				position: relative;
+				left: 0;
+				top: 0%;
+				transform: translate(0);
+				width: 100%;
+			}
 
-      &__cta {
-        padding: 7rem 4rem 4rem 4rem;
-        position: relative;
-        left: 0;
-        top: 0%;
-        transform: translate(0);
-        width: 100%;
-      }
+			&__price-box {
+				margin-bottom: 3rem;
+			}
 
-      &__price-box {
-        margin-bottom: 3rem;
-      }
+			&__price-only {
+				font-size: 1.4rem;
+				text-transform: uppercase;
+			}
 
-      &__price-only {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-      }
+			&__price-value {
+				font-size: 4rem;
+			}
+		}
+	}
 
-      &__price-value {
-        font-size: 4rem;
-      }
-    }
-  }
-
-  .hikes-button {
-    // color: $color-primary-light;
-    margin-top: -10rem;
-    text-align: center;
-  }
+	.hikes-button {
+		// color: $color-primary-light;
+		margin-top: -10rem;
+		text-align: center;
+	}
 }

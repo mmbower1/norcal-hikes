@@ -31,6 +31,7 @@ app.use(cookieParser());
 
 // access routes
 app.use('/', require('./routes/landing'));
+app.use('/subscribe', require('./routes/subscription'));
 
 // heroku 
 if (process.env.NODE_ENV === 'production') {

@@ -1,58 +1,58 @@
 @import "../../scss/App.scss";
 
 .btn {
-  &-animated {
-    animation-fill-mode: backwards;
-    animation: moveInBottom ease-out .75s;
-  }
+	&-animated {
+		animation-fill-mode: backwards;
+		animation: moveInBottom ease-out .75s;
+	}
 
-  &::after {
-    border-radius: 100px;
-    content: "";
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: all .4s;
-    z-index: -1;
-  }
+	&::after {
+		border-radius: 100px;
+		content: "";
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition: all .4s;
+		z-index: -1;
+	}
 
-  &:active {
-    // box-shadow: 0 .0rem 1rem rgba($color-black, .2);
-    transform: translateY(-1px);
-  }
+	&:active {
+		// box-shadow: 0 .0rem 1rem rgba($color-black, .2);
+		transform: translateY(-1px);
+	}
 
-  &:hover {
-    box-shadow: 0 5px 10px rgba($color-black, 0.4);
-    transform: translateY(-3px);
+	&:hover {
+		box-shadow: 0 5px 10px rgba($color-black, 0.4);
+		transform: translateY(-3px);
 
-    &::after {
-      opacity: 0;
-      transform: scale(2);
-      height: 100%;
-      width: 100%;
-    }
-  }
+		&::after {
+			opacity: 0;
+			transform: scale(2);
+			height: 100%;
+			width: 100%;
+		}
+	}
 
-  &:link, &:visited {
-    text-decoration: none;
-    text-transform: uppercase;
-    position: relative;
-  }
+	&:link,
+	&:visited {
+		text-decoration: none;
+		text-transform: uppercase;
+		position: relative;
+	}
 
-  &-white {
-    background-color: $color-white;
-    border-radius: 100px;
-    color: $color-grey-dark;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 3rem;
-    padding: 35px 130px;
-    transition: all .1s;
+	&-white {
+		background-color: $color-primary-dark;
+		border-radius: 60px;
+		color: $color-grey-dark;
+		cursor: pointer;
+		display: inline-block;
+		margin-top: 3rem;
+		padding: 25px 80px;
+		transition: all .1s;
 
-    &::after {
-      background-color: $color-white;
-    }
-  }
+		&::after {
+			background-color: $color-white;
+		}
+	}
 }
-

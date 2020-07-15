@@ -101,9 +101,9 @@ const Hikes = () => {
           </div>
         </div>
       </div>
-      <div className="hikes-button">
+      {/* <div className="hikes-button">
         <Button />
-      </div>
+      </div> */}
     </div>
   )
 }

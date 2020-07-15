@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 // middleware
-const auth = require('../middleware/auth');
+// const auth = require('../middleware/auth');
 // mongo
 // const User = require('../models/User');
 // npm's
@@ -15,8 +15,11 @@ const auth = require('../middleware/auth');
 // @desc     Landing page
 // @access   Public
 router.get('/', async (req, res) => {
-  res.json('homepage');
-  res.status(500).send('Server error homepage');
+  try {
+    res.json('landing');
+  } catch (err) {
+    res.status(500).send(err + ' Server error homepage');
+  }
 });
 
 module.exports = router;

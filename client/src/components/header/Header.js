@@ -19,7 +19,8 @@ const Header = () => {
           <span className="heading-primary-sub">is where life happens</span>
         </h1>
         <Button></Button>
-        <h4>{discover}</h4>
+        {/* <Button />Discover Outdoors */}
+        {/* <h4>{discover}</h4> */}
       </div>
     </div>
   )
