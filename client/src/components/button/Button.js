@@ -6,7 +6,7 @@ const Button = () => {
 
   return (
     <div className="btn btn-white btn-animated">
-      Discover Outdoors
+      <h4>Discover Outdoors</h4>
     </div>
   )
 }

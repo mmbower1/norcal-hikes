@@ -62,7 +62,7 @@ const Subscription = ({ subscribe }) => {
                   id="email" 
                   required 
                 />
-                <label htmlFor="email" className="form__label">Email address</label>
+                <label htmlFor="email" className="form__label">Email</label>
               </div>
             </form>
             {/* <Button type="submit"></Button> */}

@@ -5,7 +5,7 @@ import './SmallButton.scss';
 const SmallButton = () => {
   return (
     <div>
-      <a href="" className="btn-text">Learn more &rarr;</a>
+      <a href="" className="btn-text">Leave review! &rarr;</a>
     </div>
   )
 }

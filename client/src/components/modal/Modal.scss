@@ -51,5 +51,9 @@
 		transform: translate(-50%, -50%) scale(.5);
 		transition: all .3s;
 		width: 75%;
+
+		@include respond(phone) {
+			width: 95%;
+		}
 	}
 }

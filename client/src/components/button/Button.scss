@@ -54,5 +54,12 @@
 		&::after {
 			background-color: $color-white;
 		}
+
+		@include respond(phone) {
+			height: 8rem;
+			width: 29rem;
+			padding: 19px 0;
+			font-size: 14px;
+		}
 	}
 }
